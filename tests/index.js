@@ -6,6 +6,8 @@ module.exports = {
     //We direct our browser to the gogle homepage, and wait for it to load
     browser.url('http://google.com')
       .waitForElementVisible('body', 1000)
+      .console.log('This is a test');
+      
 
     // We then test to see that the "Search" button is visible
     browser.assert.elementPresent('input[value="Google Search"]')
